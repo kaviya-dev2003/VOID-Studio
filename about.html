@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy | VOID Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .about-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-text h2 {
+            font-size: var(--h2-size);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: var(--accent-gold);
+        }
+
+        .about-text p {
+            font-size: var(--body-size);
+            color: var(--text-white);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .about-text p::first-letter {
+            font-size: 4rem;
+            float: left;
+            margin-right: 1rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .bg-typography {
+            position: absolute;
+            right: -10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15vw;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.03);
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .philosophy-lines {
+            margin-top: 4rem;
+        }
+
+        .line-item {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+            transition: var(--transition-smooth);
+            cursor: default;
+        }
+
+        .line-item:hover {
+            opacity: 1;
+            padding-left: 1rem;
+            color: var(--accent-gold);
+        }
+
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .bg-typography {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">VOID</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Philosophy</h2>
+                    <p>Good design is silent. It doesn't beg for attention. It earns it by being thoughtful, functional, and inherently beautiful. At VOID Studio, we believe that every pixel should serve a purpose.</p>
+                    
+                    <div class="philosophy-lines">
+                        <div class="line-item">“Good design is silent.”</div>
+                        <div class="line-item">“It doesn’t beg for attention.”</div>
+                        <div class="line-item">“It earns it.”</div>
+                    </div>
+                </div>
+                <div class="bg-typography">THINK</div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 2rem 5%; text-align: center; color: var(--text-grey); font-size: 0.8rem; letter-spacing: 2px;">
+        &copy; 2026 VOID STUDIO. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOID Studio | Intentional Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--bg-black);
+            padding: 0 10%;
+        }
+
+        .hero h1 {
+            font-size: var(--h1-size);
+            font-weight: 300;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+
+        .subtext {
+            color: var(--text-grey);
+            font-size: 1.1rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 3rem;
+        }
+
+        .hero span {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .hero-title-part {
+            display: inline-block;
+            transition: var(--transition-smooth);
+        }
+
+        .hero-title-part:hover {
+            color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">VOID</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>
+                Design is not <br> decoration. <br>
+                <span style="font-size: 0.8em;">It is intention.</span>
+            </h1>
+            <p class="subtext">Minimal. Thoughtful. Functional.</p>
+            <a href="works.html" class="btn-gold">View Our Work</a>
+        </section>
+    </main>
+
+    <footer style="padding: 2rem 5%; text-align: center; color: var(--text-grey); font-size: 0.8rem; letter-spacing: 2px;">
+        &copy; 2026 VOID STUDIO. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+</html>
